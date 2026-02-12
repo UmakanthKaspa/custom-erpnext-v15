@@ -66,3 +66,4 @@ docker compose restart     # Restart
 | Port 3000 in use | Change the port in `docker-compose.yml` |
 
 ---
+Image: https://hub.docker.com/r/umakanthkaspa/custom-erpnext-v15

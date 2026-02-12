@@ -13,6 +13,13 @@ if ! command -v docker &> /dev/null; then
     exit 1
 fi
 
+# Check Docker is running
+if ! docker info &> /dev/null; then
+    echo "ERROR: Docker is installed but not running."
+    echo "Please start Docker Desktop and try again."
+    exit 1
+fi
+
 # Check if .env already exists
 if [ -f .env ]; then
     echo ".env file already exists."
